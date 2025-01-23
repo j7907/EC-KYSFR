@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-Themed Website</title>
+    
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" type="image/png">
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364); 
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .space-button {
+            background: linear-gradient(120deg, #4e54c8, #8f94fb);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .space-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EC-KYSFR</h1>
+</header>
+
+<div class="button-container">
+    <button class="space-button" onclick="window.location.href = 'https://example1.com';">Button 1</button>
+    <button class="space-button" onclick="window.location.href = 'https://example2.com';">Button 2</button>
+    <button class="space-button" onclick="window.location.href = 'https://example3.com';">Button 3</button>
+    <button class="space-button" onclick="window.location.href = 'https://example4.com';">Button 4</button>
+    <button class="space-button" onclick="window.location.href = 'https://example5.com';">Button 5</button>
+    <button class="space-button" onclick="window.location.href = 'https://example6.com';">Button 6</button>
+    <button class="space-button" onclick="window.location.href = 'https://example7.com';">Button 7</button>
+    <button class="space-button" onclick="window.location.href = 'https://example8.com';">Button 8</button>
+    <button class="space-button" onclick="window.location.href = 'https://example9.com';">Button 9</button>
+    <button class="space-button" onclick="window.location.href = 'https://example10.com';">Button 10</button>
+    <button class="space-button" onclick="window.location.href = 'https://example11.com';">Button 11</button>
+    <button class="space-button" onclick="window.location.href = 'https://example12.com';">Button 12</button>
+    <button class="space-button" onclick="window.location.href = 'https://example13.com';">Button 13</button>
+    <button class="space-button" onclick="window.location.href = 'https://example14.com';">Button 14</button>
+    <button class="space-button" onclick="window.location.href = 'https://example15.com';">Button 15</button>
+    <button class="space-button" onclick="window.location.href = 'https://example16.com';">Button 16</button>
+    <button class="space-button" onclick="window.location.href = 'https://example17.com';">Button 17</button>
+</div>
+
+<footer>
+    <p>&copy; 2025 KYSFR. All rights reserved.</p>
+</footer>
+
+<script>
+    
+    const buttons = document.querySelectorAll('.space-button');
+
+    const buttonData = [
+        { name: 'Explore Mars', link: 'https://mars.nasa.gov' },
+        { name: 'Visit Jupiter', link: 'https://jupiter.nasa.gov' },
+        { name: 'Explore the Moon', link: 'https://moon.nasa.gov' },
+        { name: 'NASA Home', link: 'https://www.nasa.gov' },
+        { name: 'Hubble Telescope', link: 'https://hubblesite.org' },
+        { name: 'SpaceX', link: 'https://www.spacex.com' },
+        { name: 'ISS Tracker', link: 'https://spotthestation.nasa.gov' },
+        { name: 'Astronomy Picture of the Day', link: 'https://apod.nasa.gov' },
+        { name: 'ESA', link: 'https://www.esa.int' },
+        { name: 'Mars Rover', link: 'https://mars.nasa.gov/msl/home/' },
+        { name: 'Kepler Mission', link: 'https://www.nasa.gov/mission_pages/kepler/main/index.html' },
+        { name: 'James Webb Telescope', link: 'https://jwst.nasa.gov' },
+        { name: 'Rocket Lab', link: 'https://www.rocketlabusa.com' },
+        { name: 'Virgin Galactic', link: 'https://www.virgingalactic.com' },
+        { name: 'Blue Origin', link: 'https://www.blueorigin.com' },
+        { name: 'Asteroids & Comets', link: 'https://cneos.jpl.nasa.gov' },
+        { name: 'Deep Space Network', link: 'https://deepspace.jpl.nasa.gov' }
+    ];
+
+    buttons.forEach((button, index) => {
+        if (buttonData[index]) {
+            button.textContent = buttonData[index].name;
+            button.onclick = () => window.location.href = buttonData[index].link;
+        }
+    });
+</script>
+
+</body>
+</html>
